@@ -1,0 +1,8 @@
+<!doctype html>
+<html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>DartZone – Login</title><link rel="stylesheet" href="css/style.css"></head>
+<body class="auth-bg"><main class="auth-card"><div class="brand"><span class="brand-mark">D</span><div><b>DART<span>ZONE</span></b><small>Dein Spiel. Deine Entwicklung.</small></div></div>
+<h1>Willkommen zurück</h1><p class="muted">Melde dich an oder erstelle dein Konto.</p>
+<div class="tabs"><button class="tab active" data-tab="login">Anmelden</button><button class="tab" data-tab="register">Registrieren</button></div>
+<form id="loginForm"><label>E-Mail<input type="email" id="loginEmail" required placeholder="name@beispiel.de"></label><label>Passwort<input type="password" id="loginPassword" required minlength="4" placeholder="Dein Passwort"></label><button class="btn primary wide">Anmelden <span>→</span></button></form>
+<form id="registerForm" class="hidden"><label>Benutzername<input id="regName" required maxlength="20" placeholder="Dartspieler"></label><label>E-Mail<input type="email" id="regEmail" required placeholder="name@beispiel.de"></label><label>Passwort<input type="password" id="regPassword" required minlength="4" placeholder="Mindestens 4 Zeichen"></label><button class="btn primary wide">Konto erstellen <span>→</span></button></form>
+<p id="authMessage" class="message"></p><p class="tiny muted">Demo-Version: Konten und Daten werden lokal in diesem Browser gespeichert. Für echte, sichere Online-Konten bitte Supabase einrichten (siehe README).</p></main><script src="js/common.js"></script><script src="js/auth.js"></script></body></html>
